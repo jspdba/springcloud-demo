@@ -18,6 +18,11 @@ public class ConfigClientApplication {
 	@Value("${foo}")
 	private String foo;
 
+	/**
+	 * 服务刷新地址
+	 * http://localhost:8881/actuator/bus-refresh
+	 * @param args
+	 */
 	public static void main(String[] args) {
 		SpringApplication.run(ConfigClientApplication.class, args);
 	}
