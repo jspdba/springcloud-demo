@@ -1,0 +1,23 @@
+spring:
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        healthCheckPath: /actuator/health
+        healthCheckInterval: 15s
+        instance-id: consul-miya
+      config:
+        enabled: true #false禁用Consul配置，默认true
+        format: YAML    # 表示consul上面文件的格式 有四种 YAML PROPERTIES KEY-VALUE FILES
+        #data-key: configuration    #表示consul上面的KEY值(或者说文件的名字) 默认是data
+        data-key: data    #表示consul上面的KEY值(或者说文件的名字) 默认是data
+        #prefix: 设置配置值的基本文件夹
+        #defaultContext: 设置所有应用程序使用的文件夹名称
+        #profileSeparator: 设置用于使用配置文件在属性源中分隔配置文件名称的分隔符的值
+  application:
+    name: consul-miya
+  profiles:
+    active: dev
+server:
+  port: 8503
