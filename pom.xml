@@ -22,6 +22,8 @@
 		<module>service-ribbon</module>
 		<module>serice-feign</module>
         <module>service-zuul</module>
+        <module>zipkin-service-hi</module>
+        <module>zipkin-service-miya</module>
     </modules>
 
 	<properties>
