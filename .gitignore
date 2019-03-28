@@ -26,3 +26,5 @@ HELP.md
 
 ### VS Code ###
 .vscode/
+
+zipkin-server-2.12.6-exec.jar
