@@ -26,6 +26,7 @@
         <module>zipkin-service-miya</module>
         <module>hystrix-service-lucy</module>
         <module>hystrix-turbine</module>
+        <module>consul-miya</module>
     </modules>
 
 	<properties>
